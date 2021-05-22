@@ -31,10 +31,12 @@ NTPClient timeClient(ntpUDP);
 WiFiServer wifiServer(8421);
 
 /* ======================== STATIC IP ============================= */
-IPAddress staticIP(10, 0, 0, 148);
-IPAddress gateway(10, 0, 0, 1);
-IPAddress subnet(255, 255, 255, 0);
-IPAddress dns(1, 1, 1, 1);
+// This is really useful if you don't want your IP to change all of the
+// time if you are sending commands to this on a regular basis.
+//IPAddress staticIP(10, 0, 0, 148);
+//IPAddress gateway(10, 0, 0, 1);
+//IPAddress subnet(255, 255, 255, 0);
+//IPAddress dns(1, 1, 1, 1);
 
 void setup() {
   pinMode(LED, OUTPUT);
